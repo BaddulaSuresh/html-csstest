@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+           display: grid; 
+           grid-template-columns: repeat(2,1fr);
+           gap: 10px;
+        }
+        .gallery img {
+            width: 500px;
+            height: 500px;
+        }
+        @media(max-width:600px){
+            .gallery{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery"><img src="P3.jpg" alt="iimg1">
+        <img src="P5.jpg"alt="img2">
+        <img src="P7.jpg" alt="img3">
+        <img src="P6.jpg" alt="img4">
+    </div>
+</body>
+</html>
